@@ -81,11 +81,6 @@ public class Order implements Serializable {
 		this.client = client;
 	}
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(id);
-	}
-
 	public OrderStatus getOrderStatus() {
 		return OrderStatus.valueOf(orderStatus);
 	}
@@ -107,6 +102,19 @@ public class Order implements Serializable {
 
 	public void setPayment(Payment payment) {
 		this.payment = payment;
+	}
+	
+	public Double getTotal() {
+		double sum = 0.0;
+		for (OrderItem x : items) {
+			sum += x.getSubTotal();
+		}
+		return sum;
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
 	}
 
 	@Override
