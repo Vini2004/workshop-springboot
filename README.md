@@ -27,7 +27,7 @@
 <ul>
     <li>Java Development Kit (JDK) versão 8 ou superior</li>
     <li>Maven</li>
-    <li>Banco de dados MySQL (ou outro de sua preferência)</li>
+    <li>Banco de dados seria o H2 (Seria um banco focado para testes) </li>
     <li>Git</li>
 </ul>
 
