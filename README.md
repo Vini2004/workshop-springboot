@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Workshop Spring Boot</title>
 </head>
 <body>
 <h1>Workshop Spring Boot</h1>
